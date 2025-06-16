@@ -1,0 +1,152 @@
+.mainContainer {
+    padding: 5rem 0;
+    background: #fff;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.textContent {
+    color: #333;
+}
+
+.subtitle {
+    color: var(--brand);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.highlight {
+    color: var(--brand);
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.credentialsList {
+    background: #f8f8f8;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.credentialItem {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.credentialItem:last-child {
+    margin-bottom: 0;
+}
+
+.credentialLabel {
+    color: var(--brand);
+    font-weight: 600;
+}
+
+.valuesList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.valueItem {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    color: #444;
+    font-weight: 500;
+}
+
+.valueIcon {
+    color: var(--brand);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.portalLink {
+    color: var(--brand);
+    text-decoration: none;
+    word-break: break-all;
+    transition: color 0.3s ease;
+}
+
+.portalLink:hover {
+    color: #cc0000;
+}
+
+.imageContainer {
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    .content {
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .imageContainer {
+        min-height: 400px;
+        order: -1;
+    }
+
+    .valuesList {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .mainContainer {
+        padding: 3rem 0;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .imageContainer {
+        min-height: 300px;
+    }
+}
