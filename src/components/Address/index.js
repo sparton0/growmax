@@ -7,20 +7,7 @@ import addressBack from '../../assets/address_back.jpg'
 function Address() {
   return (
     <footer className={styles.footer}>
-      {/* Contact Banner */}
-      {/* <div className={styles.contactBanner}>
-        <div className={styles.bannerContent}>
-          <h2>Ready to work with us?</h2>
-          <div className={styles.emailWrapper}>
-            <div className={styles.emailIcon}>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </div>
-            <a href="mailto:hr@mmnovatech.com">hr@mmnovatech.com</a>
-          </div>
-        </div>
-      </div> */}
+      
 
       {/* Main Footer */}
       <div className={styles.mainFooter}>
