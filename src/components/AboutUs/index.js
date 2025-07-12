@@ -30,11 +30,11 @@ function AboutUs() {
             </div>
             <div className={styles.credentialItem}>
               <span className={styles.credentialLabel}>Supervisor License No.:</span>
-              170320233251100906
+              17032023**********
             </div>
           </div>
 
-          <div className={styles.valuesList}>
+          {/* <div className={styles.valuesList}>
             <div className={styles.valueItem}>
               <span className={styles.valueIcon}>→</span>
               Solar EPC Solutions
@@ -51,7 +51,7 @@ function AboutUs() {
               <span className={styles.valueIcon}>→</span>
               Expert Installation
             </div>
-          </div>
+          </div> */}
 
           <p className={styles.description}>
             Listed on National Portal: <a href="https://www.mahadiscom.in/fsmart/empanelled_agencies_national_portal.php" target="_blank" rel="noopener noreferrer" className={styles.portalLink}>www.mahadiscom.in/fsmart/empanelled_agencies_national_portal.php</a>

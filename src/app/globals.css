@@ -2,6 +2,8 @@
   --background: #ffffff;
   --foreground: #171717;
   --brand: #FD0000;
+  --navbar-height: 5rem;
+  --max-width: 1200px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,6 +26,10 @@ body {
   font-family: var(--font-poppins), "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  padding-top: var(--navbar-height);
 }
 
 * {

@@ -1,0 +1,265 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  
+}
+
+/* Hero Section */
+.heroSection {
+  margin-bottom: 4rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #FD0000;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.heroImage {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.mainImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Scope Section */
+.scopeSection {
+  padding: 4rem 0;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: var(--brand);
+  border-radius: 2px;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Card Styles */
+.serviceCard {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 600px; /* Set minimum height */
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+}
+
+.cardHeader {
+  background: var(--brand);
+  padding: 1.5rem;
+  color: white;
+  flex-shrink: 0; /* Prevent header from shrinking */
+}
+
+.cardHeader h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  min-height: 2.8rem; /* Ensure consistent header height */
+  display: flex;
+  align-items: center;
+}
+
+.cardContent {
+  padding: 1.5rem;
+  flex: 1; /* Allow content to grow */
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1; /* Allow list to grow */
+}
+
+.serviceList li {
+  padding: 0.8rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.serviceList li:last-child {
+  margin-bottom: 0;
+}
+
+.serviceList li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--brand);
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  flex-shrink: 0; /* Prevent image from shrinking */
+  margin-top: auto; /* Push image to bottom */
+}
+
+.serviceImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CTA Section */
+.ctaSection {
+  text-align: center;
+  padding: 4rem 0;
+  background: #f8f9fa;
+  border-radius: 20px;
+  margin: 4rem 0;
+}
+
+.ctaSection h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.ctaSection p {
+  color: #666;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButton {
+  background: var(--brand);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: #cc0000;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .heroImage {
+    height: 300px;
+  }
+
+  .serviceGrid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .serviceCard {
+    min-height: 550px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+
+  .heroImage {
+    height: 250px;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+  }
+
+  .cardHeader h3 {
+    font-size: 1.2rem;
+  }
+
+  .serviceCard {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .heroImage {
+    height: 200px;
+  }
+
+  .serviceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cardImage {
+    height: 150px;
+  }
+
+  .serviceCard {
+    min-height: 450px;
+  }
+} 

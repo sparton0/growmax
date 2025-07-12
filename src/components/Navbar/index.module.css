@@ -6,6 +6,8 @@
     width: 100%;
     padding: 0 2rem;
     background-color: white;
+    position: relative;
+    z-index: 1000;
 }
 .logo1{
     display: flex;
@@ -16,114 +18,206 @@
     height: 3rem;
     width: 12rem;
 }
-.navbar{
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--navbar-height);
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 0.5rem 0;
+}
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-right: 2rem;
+    justify-content: space-between;
 }
-.navbar p {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #666;
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
 }
-.navbar p:hover{
-    font-size: 1.2rem;
+.link {
+    color: #333;
+    font-size: 1rem;
     font-weight: 500;
-    color: var(--brand);
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
-}
-.button{
-      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-    font-size: 1.2rem;
-    height: auto;
-    padding: 0.8rem;
-    width: auto;
-    border-radius: 2rem;
-    border: none;
-    background: var(--brand);
-    color: white;   
-    font-weight: 500;
-    cursor: pointer;
+    transition: color 0.2s ease;
+    text-decoration: none;
+    padding: 0.5rem 0;
     position: relative;
-    overflow: hidden;
-    z-index: 1;
+    cursor: pointer;
 }
-
-.button::before {
+.link:hover {
+    color: var(--brand);
+}
+.link::after {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
+    bottom: 0;
+    left: 0;
     width: 0;
-    height: 0;
-    background: #000000;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    transition: width 0.8s ease, height 0.8s ease;
-    z-index: -1;
+    height: 2px;
+    background: var(--brand);
+    transition: width 0.3s ease;
 }
-
-.button:hover::before {
-    width: 300%;
-    height: 300%;
+.link:hover::after {
+    width: 100%;
+}
+.active {
+    color: var(--brand);
+}
+.active::after {
+    width: 100%;
+}
+.whatsapp {
+    background: #25D366;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+.whatsapp:hover {
+    background: #128C7E;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.2);
+}
+.whatsappIcon {
+    width: 24px !important;
+    height: 24px !important;
+    filter: brightness(0) invert(1);
 }
 
 /* Media Queries */
-@media screen and (max-width: 1024px) {
-    .main {
+@media (max-width: 1024px) {
+    .container {
         padding: 0 1rem;
     }
     
-    .logo1 {
-        margin-left: 1rem;
-    }
-    
-    .navbar {
-        margin-right: 1rem;
-        gap: 1.2rem;
-    }
-    
-    .navbar p {
-        font-size: 1rem;
-    }
-    
-    .button {
-        font-size: 1rem;
-        padding: 0.6rem;
+    .nav {
+        gap: 2rem;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .main {
-        padding: 0 0.5rem;
+@media (max-width: 768px) {
+    .nav {
+        gap: 1.5rem;
     }
     
-    .logo1 {
-        margin-left: 0.5rem;
+    .link {
+        font-size: 0.9rem;
+    }
+    
+    .whatsapp {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
     }
     
     .logo {
-        height: 2rem;
-    }
-    
-    .navbar {
-        margin-right: 0.5rem;
-        gap: 1rem;
+        height: 50px;
     }
 }
 
-@media screen and (max-width: 640px) {
-    .navbar {
-        display: none; /* Hide regular navbar on mobile */
+@media (max-width: 640px) {
+    .nav {
+        gap: 1rem;
     }
     
-    /* Add a mobile menu button here if needed */
-    .mobileMenuBtn {
-        display: block;
-        margin-right: 1rem;
-        cursor: pointer;
+    .whatsapp {
+        padding: 0.5rem;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .whatsapp span {
+        display: none;
+    }
+    
+    .whatsappIcon {
+        margin: 0;
+        width: 20px !important;
+        height: 20px !important;
+    }
+}
+
+/* Dropdown Styles */
+.servicesDropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownContent {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 300px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: top center;
+    animation: dropdownAppear 0.2s ease forwards;
+}
+
+.dropdownContent::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background: white;
+    transform: rotate(45deg);
+    box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dropdownItem {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #333;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dropdownItem:hover {
+    background: #f5f5f5;
+    color: var(--brand);
+}
+
+@keyframes dropdownAppear {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-50%) translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(-50%) translateY(0);
     }
 }

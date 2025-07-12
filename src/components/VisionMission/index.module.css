@@ -1,0 +1,145 @@
+.container {
+  position: relative;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.imageContainer {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.visionMissionImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.visionSection,
+.missionSection {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.missionSection {
+  margin-bottom: 0;
+}
+
+.content {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.content:hover {
+  transform: translateY(-5px);
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.highlightText {
+  color: var(--brand);
+  position: relative;
+  z-index: 1;
+}
+
+.highlightText::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  width: 110%;
+  height: 30%;
+  background-color: rgba(253, 0, 0, 0.1);
+  z-index: -1;
+  transform: skew(-15deg);
+}
+
+.description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.decorativeLine {
+  height: 4px;
+  width: 60px;
+  background: var(--brand);
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (min-width: 992px) {
+  .container {
+    padding: 6rem 2rem;
+  }
+
+  .contentContainer {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .visionSection,
+  .missionSection {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 4rem 1rem;
+  }
+
+  .content {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 3rem 1rem;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+}

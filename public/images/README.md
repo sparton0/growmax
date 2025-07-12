@@ -1,7 +1,45 @@
-Please add the following solar energy related images to your public/images folder:
+# Service Page Images
 
-1. slide1.jpg - A modern solar panel installation on a residential rooftop with a beautiful sunset in the background
-2. slide2.jpg - A close-up of solar panels with a technician working on maintenance
-3. slide3.jpg - An aerial view of a large solar farm with mountains in the background
+This directory contains images for the service pages. Below are the required images for the Distribution Contracts & Infrastructure Works service page:
 
-These images should be high-resolution (at least 1920x1080px) and properly licensed for commercial use. You can find suitable images from stock photo websites or use your own professional photographs.
+## Required Images
+
+1. `distribution-hero.jpg` (1200x600px)
+   - Hero image showing electrical distribution infrastructure
+   - Suggested: Wide shot of power lines or substation
+
+2. `turnkey-execution.jpg` (400x300px)
+   - Image showing substation or transformer installation
+   - Suggested: Close-up of 33/11kV substation work
+
+3. `relocation.jpg` (400x300px)
+   - Image showing overhead line work
+   - Suggested: Workers relocating power lines
+
+4. `commissioning.jpg` (400x300px)
+   - Image showing commissioning process
+   - Suggested: Engineer working with technical drawings or equipment
+
+5. `supervision.jpg` (400x300px)
+   - Image showing supervision activities
+   - Suggested: Site supervisor monitoring work progress
+
+6. `additional-capabilities.jpg` (400x300px)
+   - Image showing specialized equipment or testing
+   - Suggested: Thermal imaging or power factor correction equipment
+
+## Image Guidelines
+
+- All images should be high quality and professionally shot
+- Ensure proper lighting and clear visibility of equipment/work
+- Include safety equipment and proper work practices in images
+- Avoid showing identifiable faces or personal information
+- Use images that represent modern, well-maintained equipment
+- Maintain consistent color scheme and style across all images
+
+## Image Optimization
+
+- Compress images for web use while maintaining quality
+- Use JPG format for photographs
+- Ensure images load quickly on mobile devices
+- Consider providing WebP versions for modern browsers

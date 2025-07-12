@@ -10,6 +10,8 @@ import WhyUs from "../WhyUs";
 import Stats from "../Stats";
 import Benifits from "../Benifits";
 import Address from "../Address";
+import VisionMission from "../VisionMission";
+import HappyClients from "../HappyClients";
 
 function Home() {
   return (
@@ -18,10 +20,12 @@ function Home() {
         <SlideShow />
       </div>
       <AboutUs />
+      <VisionMission />
       <OurServices />
       <WhyUs />
-      <Stats />
-      <Benifits />
+      <HappyClients />
+      {/* <Stats />
+      <Benifits /> */}
       <Address />
     </>
   );

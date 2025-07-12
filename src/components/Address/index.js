@@ -3,7 +3,7 @@ import styles from './index.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import addressBack from '../../assets/address_back.jpg'
-
+import mainLogo from '../../assets/white.png'
 function Address() {
   return (
     <footer className={styles.footer}>
@@ -82,7 +82,7 @@ function Address() {
         <div className={styles.copyright}>
           <div className={styles.copyrightContent}>
             <Image 
-              src={require('../../assets/main_logo.png')}
+              src={mainLogo}
               alt="GrowMax Solar"
               width={120}
               height={40}
