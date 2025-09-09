@@ -1,43 +1,43 @@
 import React, { useState, useEffect } from 'react'
 import styles from './index.module.css'
 import Image from 'next/image'
-import slide1 from '@/assets/slide1.jpg'
-import slide2 from '@/assets/slide2.jpg'
-import slide3 from '@/assets/slide3.jpg'
-import slide4 from '@/assets/slide4.jpg'
-import slide5 from '@/assets/slide5.jpg'
-import slide6 from '@/assets/slide6.jpg'
+import slide1 from '@/assets/hoem page/1.png'
+import slide2 from '@/assets/hoem page/2.jpg'
+import slide3 from '@/assets/hoem page/3.png'
+import slide4 from '@/assets/hoem page/4.png'
+import slide5 from '@/assets/hoem page/5.jpg'
+import slide6 from '@/assets/hoem page/6.jpg'
 
 const slides = [
   {
     image: slide1,
-    title: 'Leading Electrical Solutions Provider',
-    description: 'Expert electrical services for residential, commercial, and industrial needs',
+    title: 'Electrical Contracting and Distribution Works',
+    description: 'Licensed electrical works up to 33kV including new installations, maintenance, shifting, DTC erection, and 33kV/11kV/LT line electrification.',
   },
   {
     image: slide2,
-    title: 'Solar Power Excellence',
-    description: 'Custom solar installations with state-of-the-art technology and professional expertise',
+    title: 'Grid-Connected Solar System',
+    description: 'Expert services for rooftop solar under PM SURYAGHAR: MUFTI BIJLI YOJANA, as well as non-subsidized, commercial, and industrial solar installations.',
   },
   {
     image: slide3,
-    title: 'Infrastructure & Maintenance',
-    description: 'Comprehensive electrical infrastructure development and maintenance services',
+    title: 'Industrial and Commercial Electrical Installation',
+    description: 'High-standard wiring installations using advanced technology and innovative concepts.',
   },
   {
     image: slide4,
-    title: 'Energy Efficiency Solutions',
-    description: 'Smart energy management systems for optimal power consumption and cost savings',
+    title: 'Electrical Maintenance and Service Packages',
+    description: 'Our service packages are designed for hassle-free annual support. Customers can register under affordable yearly plans and receive professional service visits as per their package.',
   },
   {
     image: slide5,
-    title: 'Industrial Power Solutions',
-    description: 'Specialized electrical services for factories, manufacturing units, and industrial complexes',
+    title: 'Site Survey & Electrical Consultation',
+    description: 'Providing expert technical consultancy including project analysis, site surveys, compliance guidance, electricity queries, and electrical planning to ensure safe, efficient solutions and informed decision-making.',
   },
   {
     image: slide6,
-    title: 'Renewable Energy Future',
-    description: 'Sustainable power solutions for a greener and more energy-efficient tomorrow',
+    title: 'Products',
+    description: 'We offer APFC panels, customized motor windings, advanced DC starters, and industrial power distribution panels with automation and safety features.',
   },  
 ]
 

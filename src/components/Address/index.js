@@ -49,8 +49,35 @@ function Address() {
             </div>
           </div>
 
+          {/* Map Section */}
+          <div className={styles.mapSection}>
+            <h3>Our Location</h3>
+            <div className={styles.mapWrapper}>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.8155!2d74.5297!3d20.5595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjDCsDMzJzM0LjIiTiA3NMKwMzEnNDYuOSJF!5e0!3m2!1sen!2sin!4v1624451234567!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+            <div className={styles.mapInfo}>
+              <p>Find us easily in Malegaon</p>
+              <a 
+                href="https://www.google.com/maps/search/MHADA+Plot+No.+38,+Noor+Bag,+Malegaon" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={styles.mapLink}
+              >
+                View on Google Maps
+              </a>
+            </div>
+          </div>
+
           {/* Our Solutions Section */}
-          <div className={styles.section}>
+          {/* <div className={styles.section}>
             <h3>Our Solutions</h3>
             <div className={styles.solutionsList}>
               <div className={styles.solutionsColumn}>
@@ -66,16 +93,16 @@ function Address() {
                 <Link href="#">Energy Consulting</Link>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Resources Section */}
-          <div className={styles.section}>
+          {/* <div className={styles.section}>
             <h3>Resources</h3>
             <Link href="#">Solar Calculator</Link>
             <Link href="#">Solar Incentives</Link>
             <Link href="#">Energy Savings Guide</Link>
             <Link href="#">Careers</Link>
-          </div>
+          </div> */}
         </div>
 
         {/* Copyright Section */}

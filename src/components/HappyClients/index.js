@@ -26,7 +26,43 @@ const testimonials = [
     name: "Mr. IRFAN AHMED",
     testimonial: "Faced a high billing issue, but GROWMAX guided me with proper advice and helped file a complaint to utility. Got relief. Very helpful team!",
     image: "/images/client-placeholder.png"
-  }
+  },
+  {
+    id: 5,
+    name: "Dr. Jameel Gulsher",
+    testimonial: "My solar project was installed quickly and works perfectly. I am saving a lot on my monthly bills.",
+    image: "/images/client-placeholder.png"
+  },
+  {
+    id: 6,
+    name: "Mr. Lalit Desai",
+    testimonial: "The 11kV line work was done very safely and on time. Their team handled everything smoothly.",
+    image: "/images/client-placeholder.png"
+  },
+  {
+    id: 7,
+    name: "Mr. Waseem Nadir",
+    testimonial: "Growmax helped me with a billing issue and guided me to complain properly. I finally got relief from excess charges.",
+    image: "/images/client-placeholder.png"
+  },
+  {
+    id: 8,
+    name: "Er. Aasif sir (Ultimate Construction)",
+    testimonial: "Their technical advice is clear and very useful. I always trust them for my electrical needs.",
+    image: "/images/client-placeholder.png"
+  },
+  {
+    id: 9,
+    name: "Mr. xyz...",
+    testimonial: "Their EB Assistance service cleared all my doubts about my bill and gave me confidence to pay without worry.",
+    image: "/images/client-placeholder.png"
+  },
+  // {
+  //   id: 10,
+  //   name: "Mr. xyz...",
+  //   testimonial: "They installed solar panels at my house with a neat finish. The system is running without any problems.",
+  //   image: "/images/client-placeholder.png"
+  // }
 ];
 
 function HappyClients() {

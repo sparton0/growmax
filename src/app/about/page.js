@@ -78,20 +78,20 @@ export default function About() {
         <h2 className={styles.sectionTitle}>Our Core Values</h2>
         <div className={styles.valuesGrid}>
           <div className={styles.valueCard}>
-            <h3>Excellence</h3>
-            <p>Commitment to delivering the highest quality electrical solutions</p>
+            <h3>Quality & Compliance</h3>
+            <p>We uphold the highest standards of workmanship, ensuring every project meets regulatory guidelines and delivers long-lasting performance.</p>
           </div>
           <div className={styles.valueCard}>
-            <h3>Integrity</h3>
-            <p>Maintaining transparency and ethical practices in all operations</p>
+            <h3>Expertise & Reliability</h3>
+            <p>With years of technical experience, licensed professionals, and proven project execution, we deliver dependable solutions across every service.</p>
           </div>
           <div className={styles.valueCard}>
-            <h3>Innovation</h3>
-            <p>Embracing modern technologies and innovative solutions</p>
+            <h3>Trust & Transparency</h3>
+            <p>We believe in honest communication, fair practices, and guiding clients with clarity on technical and legal matters.</p>
           </div>
           <div className={styles.valueCard}>
-            <h3>Reliability</h3>
-            <p>Consistent delivery of dependable services and support</p>
+            <h3>Commitment & Customer Care</h3>
+            <p>From the smallest repair to the largest project, we are dedicated to timely delivery, reliable service, and complete customer satisfaction.</p>
           </div>
         </div>
       </section>

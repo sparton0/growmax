@@ -7,6 +7,7 @@ import service1 from '@/assets/1p.png';
 import service2 from '@/assets/2p.png';
 import service3 from '@/assets/3p.jpg';
 import service4 from '@/assets/4p.jpg';
+import { useRouter } from 'next/navigation';
 
 const products = [
   {
@@ -60,6 +61,7 @@ const products = [
 ];
 
 export default function Products() {
+  const router = useRouter();
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -103,7 +105,7 @@ export default function Products() {
       <div className={styles.ctaSection}>
         <h2>Need a Custom Solution?</h2>
         <p>Contact our experts for personalized industrial solutions</p>
-        <button className={styles.contactButton}>Contact Us</button>
+        <button className={styles.contactButton} onClick={() => router.push('/contact')}>Contact Us</button>
       </div>
     </div>
   );

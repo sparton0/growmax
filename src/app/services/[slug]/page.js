@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './page.module.css';
 import Image from 'next/image';
-
+import Link from 'next/link';
 // Distribution Contracts & Infrastructure Works
 import distributionMain from '@/assets/Services/Distribution Contracts & Infrastructure Works/main.jpg';
 import distributionCard1 from '@/assets/Services/Distribution Contracts & Infrastructure Works/card1.jpg';
@@ -363,7 +363,8 @@ export default function ServicePage({ params }) {
       <div className={styles.ctaSection}>
         <h2>Ready to Get Started?</h2>
         <p>Contact us for a detailed consultation about your {service.title.toLowerCase()} needs.</p>
-        <button className={styles.ctaButton}>Contact Us</button>
+        <Link href="/contact" className={styles.ctaButton}>Contact Us</Link>  
+        {/* <button className={styles.ctaButton}>Contact Us</button> */}
       </div>
     </div>
   );

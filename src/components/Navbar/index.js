@@ -36,6 +36,15 @@ const services = [
 
 const Navbar = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -51,6 +60,20 @@ const Navbar = () => {
           />
         </Link>
 
+        {/* Mobile Menu Button */}
+        <button 
+          className={styles.mobileMenuButton}
+          onClick={toggleMobileMenu}
+          aria-label="Toggle mobile menu"
+        >
+          <span className={`${styles.hamburger} ${isMobileMenuOpen ? styles.hamburgerOpen : ''}`}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+
+        {/* Desktop Navigation */}
         <div className={styles.nav}>
           <Link href="/" className={styles.link}>Home</Link>
           <Link href="/about" className={styles.link}>About</Link>
@@ -95,6 +118,58 @@ const Navbar = () => {
             <span>Chat on WhatsApp</span>
           </a>
         </div>
+
+        {/* Mobile Drawer */}
+        <div className={`${styles.mobileDrawer} ${isMobileMenuOpen ? styles.mobileDrawerOpen : ''}`}>
+          <div className={styles.mobileDrawerContent}>
+            <Link href="/" className={styles.mobileLink} onClick={closeMobileMenu}>Home</Link>
+            <Link href="/about" className={styles.mobileLink} onClick={closeMobileMenu}>About</Link>
+            
+            <div className={styles.mobileServicesSection}>
+              <span className={styles.mobileServicesTitle}>Services</span>
+              <div className={styles.mobileServicesList}>
+                {services.map((service) => (
+                  <Link
+                    key={service.id}
+                    href={`/services/${service.slug}`}
+                    className={styles.mobileServiceItem}
+                    onClick={closeMobileMenu}
+                  >
+                    {service.title}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <Link href="/products" className={styles.mobileLink} onClick={closeMobileMenu}>Products</Link>
+            <Link href="/contact" className={styles.mobileLink} onClick={closeMobileMenu}>Contact</Link>
+            
+            <a 
+              href="https://wa.me/919270020069" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className={styles.mobileWhatsapp}
+              onClick={closeMobileMenu}
+            >
+              <Image 
+                src="/whatsapp.svg" 
+                alt="WhatsApp" 
+                width={20} 
+                height={20} 
+                className={styles.mobileWhatsappIcon}
+              />
+              <span>Chat on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        {/* Mobile Overlay */}
+        {isMobileMenuOpen && (
+          <div 
+            className={styles.mobileOverlay}
+            onClick={closeMobileMenu}
+          />
+        )}
       </div>
     </nav>
   );
