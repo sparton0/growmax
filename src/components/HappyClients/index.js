@@ -29,7 +29,7 @@ const testimonials = [
   },
   {
     id: 5,
-    name: "Dr. Jameel Gulsher",
+    name: "Dr. Jameel Gulsher Khan",
     testimonial: "My solar project was installed quickly and works perfectly. I am saving a lot on my monthly bills.",
     image: "/images/client-placeholder.png"
   },
@@ -53,7 +53,7 @@ const testimonials = [
   },
   {
     id: 9,
-    name: "Mr. xyz...",
+    name: "Mr. Zaid IB",
     testimonial: "Their EB Assistance service cleared all my doubts about my bill and gave me confidence to pay without worry.",
     image: "/images/client-placeholder.png"
   },

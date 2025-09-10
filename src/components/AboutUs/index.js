@@ -26,7 +26,7 @@ function AboutUs() {
             </div>
             <div className={styles.credentialItem}>
               <span className={styles.credentialLabel}>Electrical Contractor License No.:</span>
-              220520233253100618
+              22052023**********
             </div>
             <div className={styles.credentialItem}>
               <span className={styles.credentialLabel}>Supervisor License No.:</span>
@@ -54,7 +54,7 @@ function AboutUs() {
           </div> */}
 
           <p className={styles.description}>
-            Listed on National Portal: <a href="https://www.mahadiscom.in/fsmart/empanelled_agencies_national_portal.php" target="_blank" rel="noopener noreferrer" className={styles.portalLink}>www.mahadiscom.in/fsmart/empanelled_agencies_national_portal.php</a>
+            Listed on National Portal: <a href="https://www.mahadiscom.in/ismart/empanelled_agencies_national_portal.php" target="_blank" rel="noopener noreferrer" className={styles.portalLink}>www.mahadiscom.in/ismart/empanelled_agencies_national_portal.php</a>
           </p>
         </div>
 

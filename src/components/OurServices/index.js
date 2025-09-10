@@ -81,7 +81,7 @@ function OurServices() {
                 <path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
             </div>
-            <h3>Advanced Control Panel & Automation Solutions</h3>
+            <h3>Products</h3>
             <p>Comprehensive automation solutions for industrial control systems featuring PLC integration, touch screen interfaces, remote monitoring capabilities, and custom automation logic designed to optimize your industrial operations and enhance productivity.</p>
             {/* <button className={styles.readMore}>Read More →</button> */}
           </div>

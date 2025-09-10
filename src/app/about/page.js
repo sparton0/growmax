@@ -29,7 +29,7 @@ export default function About() {
           </div>
           <div className={styles.credentialItem}>
             <span className={styles.credentialLabel}>Electrical Contractor License No.:</span>
-            <span className={styles.credentialValue}>220520233253100618</span>
+            <span className={styles.credentialValue}>22052023**********</span>
           </div>
           <div className={styles.credentialItem}>
             <span className={styles.credentialLabel}>Supervisor License No.:</span>
@@ -38,7 +38,7 @@ export default function About() {
         </div>
 
         <div className={styles.portalLink}>
-          <p>Listed on National Portal: <a href="https://www.mahadiscom.in/fsmart/empanelled_agencies_national_portal.php" target="_blank" rel="noopener noreferrer">www.mahadiscom.in/fsmart/empanelled_agencies_national_portal.php</a></p>
+          <p>Listed on National Portal: <a href="https://www.mahadiscom.in/ismart/empanelled_agencies_national_portal.php" target="_blank" rel="noopener noreferrer">www.mahadiscom.in/ismart/empanelled_agencies_national_portal.php</a></p>
         </div>
       </section>
 

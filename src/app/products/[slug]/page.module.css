@@ -1,0 +1,460 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  background: #ffffff;
+  color: #333333;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.breadcrumbLink {
+  background: none;
+  border: none;
+  color: #ff0000;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.breadcrumbLink:hover {
+  color: #cc0000;
+}
+
+.breadcrumbSeparator {
+  margin: 0 0.5rem;
+  color: #666;
+}
+
+.breadcrumbCurrent {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Error Section */
+.errorSection {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.errorSection h1 {
+  font-size: 2.5rem;
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+
+.errorSection p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.backButton {
+  padding: 1rem 2rem;
+  background: linear-gradient(45deg, #ff0000, #cc0000);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.backButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.2);
+}
+
+/* Product Header */
+.productHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  align-items: start;
+}
+
+.productImageContainer {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.productImage {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.productImageContainer:hover .productImage {
+  transform: scale(1.05);
+}
+
+.productInfo {
+  padding: 1rem 0;
+}
+
+.productTitle {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.productDescription {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.quoteButton, .contactButton {
+    font-family: 'Poppins', sans-serif;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.quoteButton {
+  background: linear-gradient(45deg, #ff0000, #cc0000);
+  color: white;
+  flex: 1;
+  min-width: 150px;
+}
+
+.contactButton {
+  background: transparent;
+  border: 2px solid #ff0000;
+  color: #ff0000;
+  flex: 1;
+  min-width: 150px;
+}
+
+.quoteButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.2);
+}
+
+.contactButton:hover {
+  background: rgba(255, 0, 0, 0.05);
+}
+
+/* Sections */
+.section {
+  margin-bottom: 4rem;
+  padding: 2rem 0;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(45deg, #ff0000, #cc0000);
+}
+
+.detailedDescription {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+}
+
+/* Features Grid */
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #ff0000;
+  transition: transform 0.3s ease;
+}
+
+.featureItem:hover {
+  transform: translateX(5px);
+}
+
+.featureIcon {
+  width: 30px;
+  height: 30px;
+  background: #ff0000;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.featureText {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Specifications Table */
+.specificationsTable {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f0f0f0;
+}
+
+.specRow {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.specRow:last-child {
+  border-bottom: none;
+}
+
+.specRow:hover {
+  background-color: #f8f9fa;
+}
+
+.specRow:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.specLabel {
+  font-weight: 600;
+  color: #ff0000;
+  font-size: 1rem;
+}
+
+.specValue {
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Applications List */
+.applicationsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.applicationItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.applicationItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.applicationIcon {
+  width: 25px;
+  height: 25px;
+  background: #ff0000;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.applicationText {
+  color: #333;
+  font-weight: 500;
+}
+
+/* CTA Section */
+.ctaSection {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.ctaSection h2 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.ctaSection p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryCtaButton, .secondaryCtaButton {
+  padding: 1.2rem 2.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  min-width: 180px;
+}
+
+.primaryCtaButton {
+  background: linear-gradient(45deg, #ff0000, #cc0000);
+  color: white;
+}
+
+.secondaryCtaButton {
+  background: transparent;
+  border: 2px solid #ff0000;
+  color: #ff0000;
+}
+
+.primaryCtaButton:hover, .secondaryCtaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.2);
+}
+
+.secondaryCtaButton:hover {
+  background: rgba(255, 0, 0, 0.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .productHeader {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .productTitle {
+    font-size: 2rem;
+  }
+
+  .actionButtons {
+    flex-direction: column;
+  }
+
+  .quoteButton, .contactButton {
+    width: 100%;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .specRow {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .specLabel {
+    font-size: 0.9rem;
+  }
+
+  .specValue {
+    font-size: 0.9rem;
+  }
+
+  .applicationsList {
+    grid-template-columns: 1fr;
+  }
+
+  .ctaSection {
+    padding: 2rem 1rem;
+  }
+
+  .ctaSection h2 {
+    font-size: 2rem;
+  }
+
+  .ctaButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .primaryCtaButton, .secondaryCtaButton {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .productTitle {
+    font-size: 1.75rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+
+  .featureItem, .applicationItem {
+    padding: 0.8rem;
+  }
+
+  .specRow {
+    padding: 0.8rem 1rem;
+  }
+}
