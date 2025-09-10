@@ -58,14 +58,14 @@ function AboutUs() {
           </p>
         </div>
 
-        <div className={styles.imageContainer}>
+        {/* <div className={styles.imageContainer}>
           <Image 
             src={about} 
             alt="About GrowMax Engineers" 
             className={styles.image}
             priority
           />
-        </div>
+        </div> */}
       </div>
     </div>
   )

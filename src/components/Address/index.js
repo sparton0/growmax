@@ -33,7 +33,7 @@ function Address() {
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <a href="mailto:info.growmax.power@gmail.com">info.growmax.power@gmail.com</a>
+              <a href="mailto:info.growmaxengineers@gmail.com">info.growmaxengineers@gmail.com</a>
             </div>
             <div className={styles.addressItem}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -110,11 +110,11 @@ function Address() {
           <div className={styles.copyrightContent}>
             <Image 
               src={mainLogo}
-              alt="GrowMax Solar"
+              alt="GROWMAX ENGINEERS"
               width={120}
               height={40}
             />
-            <p>©Copyright 2024 GrowMax Solar | All Rights Reserved</p>
+            <p>©Copyright 2024 GROWMAX ENGINEERS | All Rights Reserved</p>
             {/* <Image 
               src={require('../../assets/dmca.png')}
               alt="DMCA Protected"

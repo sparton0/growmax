@@ -28,7 +28,7 @@ function OurServices() {
             </div>
             <h3>Distribution Contracts & Infrastructure Works</h3>
             <p>This core service covers comprehensive contracting solutions for power distribution infrastructure, executed with full regulatory compliance and technical precision.</p>
-            <button className={styles.readMore}>Read More →</button>
+            {/* <button className={styles.readMore}>Read More →</button> */}
           </div>
 
           <div className={styles.serviceCard}>
@@ -39,7 +39,7 @@ function OurServices() {
             </div>
             <h3>Grid-Connected Solar Projects</h3>
             <p>We provide end-to-end EPC (Engineering, Procurement, and Construction) services for grid-connected solar systems, helping clients reduce energy costs and adopt clean, renewable power.</p>
-            <button className={styles.readMore}>Read More →</button>
+            {/* <button className={styles.readMore}>Read More →</button> */}
           </div>
 
           <div className={styles.serviceCard}>
@@ -50,7 +50,7 @@ function OurServices() {
             </div>
             <h3>Industrial & Commercial Electrical Installations</h3>
             <p>This service covers all types of structured electrical wiring and installations across residential, commercial, and industrial properties, with full compliance to safety and electrical standards.</p>
-            <button className={styles.readMore}>Read More →</button>
+            {/* <button className={styles.readMore}>Read More →</button> */}
           </div>
 
           <div className={styles.serviceCard}>
@@ -61,7 +61,7 @@ function OurServices() {
             </div>
             <h3>Electrical Maintenance & Service Packages</h3>
             <p>Our service packages are designed for hassle-free annual support. Customers can register under affordable yearly plans and receive professional service visits as per their package—services are included, but materials or new installation work are charged separately.</p>
-            <button className={styles.readMore}>Read More →</button>
+            {/* <button className={styles.readMore}>Read More →</button> */}
           </div>
 
           <div className={styles.serviceCard}>
@@ -72,7 +72,18 @@ function OurServices() {
             </div>
             <h3>Site Survey & Electrical Consultation</h3>
             <p>We offer paid, expert-level survey and consultation services to help residential, commercial, and industrial clients make informed, compliant, and technically sound decisions. Whether it's understanding billing issues, planning load distribution, addressing electrical faults, or exploring solar feasibility, our guidance ensures safety, efficiency, and legal clarity in every situation.</p>
-            <button className={styles.readMore}>Read More →</button>
+            {/* <button className={styles.readMore}>Read More →</button> */}
+          </div>
+
+          <div className={styles.serviceCard}>
+            <div className={styles.iconContainer}>
+              <svg className={styles.icon} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </div>
+            <h3>Advanced Control Panel & Automation Solutions</h3>
+            <p>Comprehensive automation solutions for industrial control systems featuring PLC integration, touch screen interfaces, remote monitoring capabilities, and custom automation logic designed to optimize your industrial operations and enhance productivity.</p>
+            {/* <button className={styles.readMore}>Read More →</button> */}
           </div>
         </div>
       </div>

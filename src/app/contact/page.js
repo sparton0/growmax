@@ -38,7 +38,7 @@ export default function Contact() {
               <FaEnvelope className={styles.icon} />
               <div>
                 <h3>Email</h3>
-                <p>info.growmax.power@gmail.com</p>
+                <p>info.growmaxengineers@gmail.com</p>
               </div>
             </div>
 

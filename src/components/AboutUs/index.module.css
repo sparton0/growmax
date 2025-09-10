@@ -7,7 +7,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
